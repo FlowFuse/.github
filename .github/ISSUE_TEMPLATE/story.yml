@@ -12,12 +12,12 @@ body:
     label: Description
     description: Describe the story
     value: |
-    **As a:**
-
-    **I want to:**
-
-    **So that:**
-
+      **As a:**
+      
+      **I want to:**
+      
+      **So that:**
+      
 - type: textarea
   attributes:
     label: Acceptance Criteria
