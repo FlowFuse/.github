@@ -12,11 +12,11 @@ body:
     label: Description
     description: Describe the story
     value: |
-      **As a:**
+      ### As a:
       
-      **I want to:**
+      ### I want to:
       
-      **So that:**
+      ### So that:
       
 - type: textarea
   attributes:
