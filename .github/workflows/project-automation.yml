@@ -1,20 +1,16 @@
 name: Add new issues to the Product Board
 
-on: workflow_call
-
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: true
 jobs:
   add-to-project:
     name: Add issue to project
     runs-on: ubuntu-latest
     steps:
-       - uses: leonsteinhaeuser/project-beta-automations@v1.1.0
+       - uses: actions/add-to-project@main
          with:
-           gh_token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
-           organization: flowforge
-           project_id: 3
-           resource_node_id: ${{ github.event.issue.node_id }}
-
-#       - uses: actions/add-to-project@main
-#         with:
-#           project-url: https://github.com/orgs/flowforge/projects/3
-#           github-token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
+           project-url: https://github.com/orgs/flowforge/projects/3
+           github-token: ${{ secrets.token }}
