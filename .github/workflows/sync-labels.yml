@@ -1,0 +1,19 @@
+name: Synchronize Labels
+on:
+  workflow_dispatch
+
+jobs:
+  sync_labels:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+    - name: Install github-label-sync
+      run: npm install -g github-label-sync
+    - name:
+        run: sh ./sync-labels.sh
+        env:
+          gh_token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
