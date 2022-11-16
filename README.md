@@ -14,8 +14,7 @@ This workflow will ensure issues are automatically added to the [Product board](
 
 ## Labels
 
-We have a standard set of labels that should be applied across all repositories in
-the organisation.
+We have a standard set of labels that should be applied across all repositories listed in [flowforge-repositories.yml](https://github.com/flowforge/.github/blob/main/flowforge-repositories.yml).
 
 [An Action](https://github.com/flowforge/.github/actions/workflows/sync-labels.yml) is provided in this repo that will synchronise the labels.
 
