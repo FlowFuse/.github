@@ -13,7 +13,7 @@ jobs:
         node-version: 16.x
     - name: Install github-label-sync
       run: npm install -g github-label-sync
-    - name:
-        run: sh ./sync-labels.sh
-        env:
-          gh_token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
+    - name: Run github-label-sync
+      run: sh ./sync-labels.sh
+      env:
+        gh_token: ${{ secrets.PROJECT_ACCESS_TOKEN }}
