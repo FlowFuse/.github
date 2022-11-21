@@ -10,6 +10,7 @@ flowforge-file-server
 flowforge-nr-audit-logger
 flowforge-nr-auth
 flowforge-nr-files
+flowforge-nr-tools-plugin
 flowforge-nr-launcher
 flowforge-nr-project-nodes
 flowforge-nr-storage
