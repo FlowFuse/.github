@@ -67,6 +67,11 @@
         "name": "area:install"
     },
     {
+        "color": "0075ca",
+        "description": "Anything related to Stripe integration",
+        "name": "area:billing"
+    },
+    {
         "color": "DCEAFD",
         "description": "Sizing estimation point",
         "name": "1"
