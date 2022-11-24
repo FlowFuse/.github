@@ -117,6 +117,12 @@
         "name": "good first issue"
     },
     {
+        "color": "666666",
+        "description": "Something to highlight in the release",
+        "name": "headline"
+    },
+
+    {
         "color": "f3f3f3",
         "description": "Collaboration features on FlowForge and Node-RED",
         "name": "scope:collaboration",
