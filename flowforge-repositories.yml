@@ -13,6 +13,7 @@ flowforge-nr-auth
 flowforge-nr-files
 flowforge-nr-tools-plugin
 flowforge-nr-launcher
+flowforge-nr-persistent-context
 flowforge-nr-project-nodes
 flowforge-nr-storage
 flowforge-nr-theme
