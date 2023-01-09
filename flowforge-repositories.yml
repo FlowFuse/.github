@@ -17,6 +17,7 @@ flowforge-nr-persistent-context
 flowforge-nr-project-nodes
 flowforge-nr-storage
 flowforge-nr-theme
+flowforge-nr-plugin
 forge-ui-components
 handbook
 helm
