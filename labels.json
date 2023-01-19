@@ -72,6 +72,11 @@
         "name": "area:billing"
     },
     {
+        "color": "0075ca",
+        "description": "Anything related to the FF platform infrastructure",
+        "name": "area:infrastructure"
+    },
+    {
         "color": "DCEAFD",
         "description": "Sizing estimation point",
         "name": "1"
