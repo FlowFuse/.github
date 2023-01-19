@@ -16,6 +16,9 @@
     - [ ] Upgrade instructions
     - [ ] Configuration details
     - [ ] Concepts
+ - [ ] Changes `flowforge.yml`?
+    - [ ] Issue/PR raised on `flowforge/helm` to update ConfigMap Template
+    - [ ] Issue/PR raised on `flowforge/CloudProject` to update values for Staging/Production
 
 ## Labels
 
