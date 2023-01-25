@@ -8,16 +8,11 @@ flowforge-driver-docker
 flowforge-driver-k8s
 flowforge-driver-localfs
 flowforge-file-server
-flowforge-nr-audit-logger
-flowforge-nr-auth
 flowforge-nr-files
 flowforge-nr-tools-plugin
 flowforge-nr-launcher
 flowforge-nr-persistent-context
 flowforge-nr-project-nodes
-flowforge-nr-storage
-flowforge-nr-theme
-flowforge-nr-plugin
 forge-ui-components
 handbook
 helm
