@@ -179,5 +179,10 @@
         "aliases": [
             "p-3"
         ]
+    },
+    {
+        "color": "D24787",
+        "description": "Requires Graphic/UI/UX Design work",
+        "name": "design"
     }
 ]
