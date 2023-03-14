@@ -1,4 +1,4 @@
-name: 📖 Art Request
+name: 🎨 Art Request
 description: Creates a request for a designer to pick up. Used to ask for blog tile images, graphics for the website, diagrams for presentations, etc.
 labels: [design, artwork, task]
 body:
