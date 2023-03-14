@@ -184,5 +184,10 @@
         "color": "D24787",
         "description": "Requires Graphic/UI/UX Design work",
         "name": "design"
+    },
+    {
+        "color": "D24787",
+        "description": "Requires the production of an art asset, e.g. blog tile, diagram, icon",
+        "name": "artwork"
     }
 ]
