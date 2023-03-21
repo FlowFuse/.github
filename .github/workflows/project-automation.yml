@@ -23,5 +23,5 @@ jobs:
          with:
            labeled: design, artwork
            label-operator: AND
-           project-url: https://github.com/orgs/flowforge/projects/3
+           project-url: https://github.com/orgs/flowforge/projects/10
            github-token: ${{ secrets.token }}
