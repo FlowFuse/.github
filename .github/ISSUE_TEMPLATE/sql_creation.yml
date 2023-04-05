@@ -1,4 +1,4 @@
-name: 🎨 SQL Validation
+name: Customer Success SQL Creation
 description: Creates a request to write and review SQL code to be used to automate emails and support pop-ups for Customer Success tasks via Hubspot.
 body:
 - type: textarea
