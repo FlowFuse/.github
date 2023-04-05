@@ -1,0 +1,7 @@
+name: 🎨 SQL Validation
+description: Creates a request to write and review SQL code to be used to automate emails and support pop-ups for Customer Success tasks via Hubspot.
+body:
+- type: textarea
+  attributes:
+    label: Description
+    description: Describe what data from the production database this SQL should select in clear detail.
