@@ -79,32 +79,50 @@
     {
         "color": "DCEAFD",
         "description": "Sizing estimation point",
-        "name": "1"
+        "name": "XS - 1",
+        "aliases": [
+            "1"
+        ]
     },
     {
         "color": "C8DFFD",
         "description": "Sizing estimation point",
-        "name": "2"
+        "name": "S - 2",
+        "aliases": [
+            "2"
+        ]
     },
     {
         "color": "B4D4FE",
         "description": "Sizing estimation point",
-        "name": "3"
+        "name": "M - 3",
+        "aliases": [
+            "3"
+        ]
     },
     {
         "color": "A0C9FE",
         "description": "Sizing estimation point",
-        "name": "5"
+        "name": "L - 5",
+        "aliases": [
+            "5"
+        ]
     },
     {
         "color": "8CBEFF",
         "description": "Sizing estimation point",
-        "name": "8"
+        "name": "XL - 8",
+        "aliases": [
+            "8"
+        ]
     },
     {
         "color": "78B3FF",
         "description": "Sizing estimation point",
-        "name": "13"
+        "name": "XXL - 13",
+        "aliases": [
+            "13"
+        ]
     },
     {
         "color": "ffffff",
@@ -131,30 +149,37 @@
         "description": "Something to highlight in the release",
         "name": "headline"
     },
-
     {
         "color": "f3f3f3",
         "description": "Collaboration features on FlowForge and Node-RED",
         "name": "scope:collaboration",
-        "aliases": ["Collaboration"]
+        "aliases": [
+            "Collaboration"
+        ]
     },
     {
         "color": "f3f3f3",
         "description": "Agent feature for Gateways and PLCs",
         "name": "scope:device",
-        "aliases": ["Edge Device"]
+        "aliases": [
+            "Edge Device"
+        ]
     },
     {
         "color": "f3f3f3",
         "description": "Enterprise adoption and roll out features",
         "name": "scope:enterprise",
-        "aliases": ["Enterprise"]
+        "aliases": [
+            "Enterprise"
+        ]
     },
     {
         "color": "f3f3f3",
         "description": "Features for FlowForge to boost the vanilla Node-RED experience",
         "name": "scope:node-red",
-        "aliases": ["Node-RED"]
+        "aliases": [
+            "Node-RED"
+        ]
     },
     {
         "color": "B60205",
@@ -189,5 +214,15 @@
         "color": "D24787",
         "description": "Requires the production of an art asset, e.g. blog tile, diagram, icon",
         "name": "artwork"
+    },
+    {
+        "color": "006b75",
+        "description": "A potential feature or improvement that is under review for possible development and implementation",
+        "name": "consideration"
+    },
+    {
+        "color": "A78D52",
+        "description": "further investigation, analysis, or study is needed to address a specific issue",
+        "name": "research"
     }
 ]
