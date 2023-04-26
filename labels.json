@@ -1,228 +1,233 @@
 [
-    {
-        "color": "d73a4a",
-        "description": "Something isn't working",
-        "name": "bug"
-    },
-    {
-        "color": "a2eeef",
-        "description": "New feature or request that needs to be turned into Epic/Story details",
-        "name": "feature-request"
-    },
-    {
-        "color": "5319E7",
-        "description": "A significant feature or piece of work that doesn't easily fit into a single release",
-        "name": "epic"
-    },
-    {
-        "color": "4D7C07",
-        "description": "A user-oriented description of a feature",
-        "name": "story"
-    },
-    {
-        "color": "952C4B",
-        "description": "A piece of work that isn't necessarily tied to a specific Epic or Story.",
-        "name": "task"
-    },
-    {
-        "color": "0075ca",
-        "description": "Database released work",
-        "name": "area:db"
-    },
-    {
-        "color": "0075ca",
-        "description": "Involves a database migration",
-        "name": "area:migration"
-    },
-    {
-        "color": "0075ca",
-        "description": "Work on the platform API",
-        "name": "area:api"
-    },
-    {
-        "color": "0075ca",
-        "description": "Device specific work",
-        "name": "area:device"
-    },
-    {
-        "color": "0075ca",
-        "description": "Improvements or additions to documentation",
-        "name": "area:docs",
-        "aliases": [
-            "docs",
-            "documentation"
-        ]
-    },
-    {
-        "color": "0075ca",
-        "description": "For any issues that require work in the frontend/UI",
-        "name": "area:frontend",
-        "aliases": [
-            "frontend"
-        ]
-    },
-    {
-        "color": "0075ca",
-        "description": "Part of the install/first-run user experience",
-        "name": "area:install"
-    },
-    {
-        "color": "0075ca",
-        "description": "Anything related to Stripe integration",
-        "name": "area:billing"
-    },
-    {
-        "color": "0075ca",
-        "description": "Anything related to the FF platform infrastructure",
-        "name": "area:infrastructure"
-    },
-    {
-        "color": "DCEAFD",
-        "description": "Sizing estimation point",
-        "name": "XS - 1",
-        "aliases": [
-            "1"
-        ]
-    },
-    {
-        "color": "C8DFFD",
-        "description": "Sizing estimation point",
-        "name": "S - 2",
-        "aliases": [
-            "2"
-        ]
-    },
-    {
-        "color": "B4D4FE",
-        "description": "Sizing estimation point",
-        "name": "M - 3",
-        "aliases": [
-            "3"
-        ]
-    },
-    {
-        "color": "A0C9FE",
-        "description": "Sizing estimation point",
-        "name": "L - 5",
-        "aliases": [
-            "5"
-        ]
-    },
-    {
-        "color": "8CBEFF",
-        "description": "Sizing estimation point",
-        "name": "XL - 8",
-        "aliases": [
-            "8"
-        ]
-    },
-    {
-        "color": "78B3FF",
-        "description": "Sizing estimation point",
-        "name": "XXL - 13",
-        "aliases": [
-            "13"
-        ]
-    },
-    {
-        "color": "ffffff",
-        "description": "",
-        "name": "upstream"
-    },
-    {
-        "color": "D93F0B",
-        "description": "",
-        "name": "blocked"
-    },
-    {
-        "color": "FBCA04",
-        "description": "Needs looking at to decide what to do",
-        "name": "needs-triage"
-    },
-    {
-        "color": "aaffaa",
-        "description": "Good for newcomers",
-        "name": "good first issue"
-    },
-    {
-        "color": "666666",
-        "description": "Something to highlight in the release",
-        "name": "headline"
-    },
-    {
-        "color": "f3f3f3",
-        "description": "Collaboration features on FlowForge and Node-RED",
-        "name": "scope:collaboration",
-        "aliases": [
-            "Collaboration"
-        ]
-    },
-    {
-        "color": "f3f3f3",
-        "description": "Agent feature for Gateways and PLCs",
-        "name": "scope:device",
-        "aliases": [
-            "Edge Device"
-        ]
-    },
-    {
-        "color": "f3f3f3",
-        "description": "Enterprise adoption and roll out features",
-        "name": "scope:enterprise",
-        "aliases": [
-            "Enterprise"
-        ]
-    },
-    {
-        "color": "f3f3f3",
-        "description": "Features for FlowForge to boost the vanilla Node-RED experience",
-        "name": "scope:node-red",
-        "aliases": [
-            "Node-RED"
-        ]
-    },
-    {
-        "color": "B60205",
-        "description": "High Priority",
-        "name": "priority:high",
-        "aliases": [
-            "p-1"
-        ]
-    },
-    {
-        "color": "E99695",
-        "description": "Medium Priority",
-        "name": "priority:medium",
-        "aliases": [
-            "p-2"
-        ]
-    },
-    {
-        "color": "F9D0C4",
-        "description": "Low Priority",
-        "name": "priority:low",
-        "aliases": [
-            "p-3"
-        ]
-    },
-    {
-        "color": "D24787",
-        "description": "Requires Graphic/UI/UX Design work",
-        "name": "design"
-    },
-    {
-        "color": "D24787",
-        "description": "Requires the production of an art asset, e.g. blog tile, diagram, icon",
-        "name": "artwork"
-    },
-    {
-        "color": "006b75",
-        "description": "A potential feature or improvement that is under review for possible development and implementation",
-        "name": "consideration"
-    },
-    {
-        "color": "A78D52",
-        "description": "further investigation, analysis, or study is needed to address a specific issue",
-        "name": "research"
-    }
+  {
+    "color": "d73a4a",
+    "description": "Something isn't working",
+    "name": "bug"
+  },
+  {
+    "color": "a2eeef",
+    "description": "New feature or request that needs to be turned into Epic/Story details",
+    "name": "feature-request"
+  },
+  {
+    "color": "5319E7",
+    "description": "A significant feature or piece of work that doesn't easily fit into a single release",
+    "name": "epic"
+  },
+  {
+    "color": "4D7C07",
+    "description": "A user-oriented description of a feature",
+    "name": "story"
+  },
+  {
+    "color": "952C4B",
+    "description": "A piece of work that isn't necessarily tied to a specific Epic or Story.",
+    "name": "task"
+  },
+  {
+    "color": "0075ca",
+    "description": "Database released work",
+    "name": "area:db"
+  },
+  {
+    "color": "0075ca",
+    "description": "Involves a database migration",
+    "name": "area:migration"
+  },
+  {
+    "color": "0075ca",
+    "description": "Work on the platform API",
+    "name": "area:api"
+  },
+  {
+    "color": "0075ca",
+    "description": "Device specific work",
+    "name": "area:device"
+  },
+  {
+    "color": "0075ca",
+    "description": "Improvements or additions to documentation",
+    "name": "area:docs",
+    "aliases": [
+      "docs",
+      "documentation"
+    ]
+  },
+  {
+    "color": "0075ca",
+    "description": "For any issues that require work in the frontend/UI",
+    "name": "area:frontend",
+    "aliases": [
+      "frontend"
+    ]
+  },
+  {
+    "color": "0075ca",
+    "description": "Part of the install/first-run user experience",
+    "name": "area:install"
+  },
+  {
+    "color": "0075ca",
+    "description": "Anything related to Stripe integration",
+    "name": "area:billing"
+  },
+  {
+    "color": "0075ca",
+    "description": "Anything related to the FF platform infrastructure",
+    "name": "area:infrastructure"
+  },
+  {
+    "color": "DCEAFD",
+    "description": "Sizing estimation point",
+    "name": "XS - 1",
+    "aliases": [
+      "1"
+    ]
+  },
+  {
+    "color": "C8DFFD",
+    "description": "Sizing estimation point",
+    "name": "S - 2",
+    "aliases": [
+      "2"
+    ]
+  },
+  {
+    "color": "B4D4FE",
+    "description": "Sizing estimation point",
+    "name": "M - 3",
+    "aliases": [
+      "3"
+    ]
+  },
+  {
+    "color": "A0C9FE",
+    "description": "Sizing estimation point",
+    "name": "L - 5",
+    "aliases": [
+      "5"
+    ]
+  },
+  {
+    "color": "8CBEFF",
+    "description": "Sizing estimation point",
+    "name": "XL - 8",
+    "aliases": [
+      "8"
+    ]
+  },
+  {
+    "color": "78B3FF",
+    "description": "Sizing estimation point",
+    "name": "XXL - 13",
+    "aliases": [
+      "13"
+    ]
+  },
+  {
+    "color": "ffffff",
+    "description": "",
+    "name": "upstream"
+  },
+  {
+    "color": "D93F0B",
+    "description": "",
+    "name": "blocked"
+  },
+  {
+    "color": "FBCA04",
+    "description": "Needs looking at to decide what to do",
+    "name": "needs-triage"
+  },
+  {
+    "color": "aaffaa",
+    "description": "Good for newcomers",
+    "name": "good first issue"
+  },
+  {
+    "color": "666666",
+    "description": "Something to highlight in the release",
+    "name": "headline"
+  },
+  {
+    "color": "f3f3f3",
+    "description": "Collaboration features on FlowForge and Node-RED",
+    "name": "scope:collaboration",
+    "aliases": [
+      "Collaboration"
+    ]
+  },
+  {
+    "color": "f3f3f3",
+    "description": "Agent feature for Gateways and PLCs",
+    "name": "scope:device",
+    "aliases": [
+      "Edge Device"
+    ]
+  },
+  {
+    "color": "f3f3f3",
+    "description": "Enterprise adoption and roll out features",
+    "name": "scope:enterprise",
+    "aliases": [
+      "Enterprise"
+    ]
+  },
+  {
+    "color": "f3f3f3",
+    "description": "Features for FlowForge to boost the vanilla Node-RED experience",
+    "name": "scope:node-red",
+    "aliases": [
+      "Node-RED"
+    ]
+  },
+  {
+    "color": "B60205",
+    "description": "High Priority",
+    "name": "priority:high",
+    "aliases": [
+      "p-1"
+    ]
+  },
+  {
+    "color": "E99695",
+    "description": "Medium Priority",
+    "name": "priority:medium",
+    "aliases": [
+      "p-2"
+    ]
+  },
+  {
+    "color": "F9D0C4",
+    "description": "Low Priority",
+    "name": "priority:low",
+    "aliases": [
+      "p-3"
+    ]
+  },
+  {
+    "color": "D24787",
+    "description": "Requires Graphic/UI/UX Design work",
+    "name": "design"
+  },
+  {
+    "color": "D24787",
+    "description": "Requires the production of an art asset, e.g. blog tile, diagram, icon",
+    "name": "artwork"
+  },
+  {
+    "color": "006b75",
+    "description": "A potential feature or improvement that is under review for possible development and implementation",
+    "name": "consideration"
+  },
+  {
+    "color": "A78D52",
+    "description": "further investigation, analysis, or study is needed to address a specific issue",
+    "name": "research"
+  },
+  {
+    "color": "CF0B1C",
+    "description": "Crtical Priority - only assigned PM/CTO/CEO",
+    "name": "priority:critical"
+  }
 ]
