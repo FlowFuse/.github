@@ -79,49 +79,55 @@
     {
         "color": "DCEAFD",
         "description": "Sizing estimation point",
-        "name": "XS - 1",
+        "name": "size:XS - 1",
         "aliases": [
-            "1"
+            "1",
+            "XS - 1"
         ]
     },
     {
         "color": "C8DFFD",
         "description": "Sizing estimation point",
-        "name": "S - 2",
+        "name": "size:S - 2",
         "aliases": [
-            "2"
+            "2",
+            "S - 2"
         ]
     },
     {
         "color": "B4D4FE",
         "description": "Sizing estimation point",
-        "name": "M - 3",
+        "name": "size:M - 3",
         "aliases": [
-            "3"
+            "3",
+            "M - 3"
         ]
     },
     {
         "color": "A0C9FE",
         "description": "Sizing estimation point",
-        "name": "L - 5",
+        "name": "size:L - 5",
         "aliases": [
-            "5"
+            "5",
+            "L - 5"
         ]
     },
     {
         "color": "8CBEFF",
         "description": "Sizing estimation point",
-        "name": "XL - 8",
+        "name": "size:XL - 8",
         "aliases": [
-            "8"
+            "8",
+            "XL - 8"
         ]
     },
     {
         "color": "78B3FF",
         "description": "Sizing estimation point",
-        "name": "XXL - 13",
+        "name": "size:XXL - 13",
         "aliases": [
-            "13"
+            "13",
+            "XXL - 13"
         ]
     },
     {
@@ -204,6 +210,11 @@
         "aliases": [
             "p-3"
         ]
+    },
+    {
+        "color": "CF0B1C",
+        "description": "Critical Priority",
+        "name": "priority:critical"
     },
     {
         "color": "D24787",
