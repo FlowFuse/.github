@@ -11,7 +11,7 @@
 <!-- https://flowforge.com/handbook/development/#defining-done -->
 
  - [ ] I have read the [contribution guidelines](https://github.com/flowforge/flowforge/blob/main/CONTRIBUTING.md)
- - [ ] Suitable unit/system level tests have been added and they pass
+ - [ ] Suitable unit/system level tests have been added and they pass <!-- If not adding test coverage, please clarify why not? -->
  - [ ] Documentation has been updated
     - [ ] Upgrade instructions
     - [ ] Configuration details
