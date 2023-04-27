@@ -1,5 +1,6 @@
 .github
 content
+CloudProject
 docker-compose
 flowforge
 flowforge-dev-env
@@ -8,6 +9,7 @@ flowforge-driver-docker
 flowforge-driver-k8s
 flowforge-driver-localfs
 flowforge-file-server
+flowforge-nr-dashboard
 flowforge-nr-files
 flowforge-nr-tools-plugin
 flowforge-nr-launcher
@@ -17,6 +19,8 @@ forge-ui-components
 handbook
 helm
 installer
+nodered.snap
+node-red-function-gpt
 usage-ping-collector
 website
 digital-ocean-droplet
