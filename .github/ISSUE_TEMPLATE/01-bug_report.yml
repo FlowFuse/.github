@@ -1,5 +1,5 @@
-name: 🐞 Report a bug
-description: File a bug/issue on the FlowForge platform
+name: 🐜 Report a bug
+description: File a bug on the FlowForge platform
 labels: [needs-triage]
 body:
 - type: textarea
@@ -32,3 +32,7 @@ body:
         - Browser:
   validations:
     required: false
+- type: markdown
+  attributes:
+    value: |
+      Hint: Please remember to provide an effort estimate, if possible, as outlined in our handbook.
