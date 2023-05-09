@@ -21,6 +21,7 @@ helm
 installer
 nodered.snap
 node-red-function-gpt
+security
 usage-ping-collector
 website
 digital-ocean-droplet
