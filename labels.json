@@ -235,5 +235,10 @@
         "color": "A78D52",
         "description": "further investigation, analysis, or study is needed to address a specific issue",
         "name": "research"
+    },
+    {
+        "color": "B60205",
+        "description": "requested by customer",
+        "name": "customer request"
     }
 ]
