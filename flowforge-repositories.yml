@@ -19,6 +19,7 @@ forge-ui-components
 handbook
 helm
 installer
+node-red
 nodered.snap
 node-red-function-gpt
 security
