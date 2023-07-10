@@ -77,6 +77,16 @@
         "name": "area:infrastructure"
     },
     {
+        "color": "0075ca",
+        "description": "Anything related to marketing activities",
+        "name": "area:marketing"
+    },
+    {
+        "color": "0075ca",
+        "description": "Anything related to customer success activities",
+        "name": "area:customer-success"
+    },
+    {
         "color": "DCEAFD",
         "description": "Sizing estimation point",
         "name": "size:XS - 1",
