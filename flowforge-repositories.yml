@@ -1,5 +1,6 @@
 .github
 admin
+aws-ami
 content
 CloudProject
 docker-compose
