@@ -1,5 +1,5 @@
 name: 🐜 Report a bug
-description: File a bug on the FlowForge platform
+description: File a bug on the FlowFuse platform
 labels: [needs-triage]
 body:
 - type: textarea
@@ -25,7 +25,7 @@ body:
     label: Environment
     description: Please tell us about your environment. Include any relevant information on how you are running Node-RED.
     value: |
-        - FlowForge version:
+        - FlowFuse version:
         - Node.js version:
         - npm version:
         - Platform/OS:

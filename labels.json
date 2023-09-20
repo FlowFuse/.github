@@ -167,7 +167,7 @@
     },
     {
         "color": "f3f3f3",
-        "description": "Collaboration features on FlowForge and Node-RED",
+        "description": "Collaboration features on FlowFuse and Node-RED",
         "name": "scope:collaboration",
         "aliases": [
             "Collaboration"
@@ -191,7 +191,7 @@
     },
     {
         "color": "f3f3f3",
-        "description": "Features for FlowForge to boost the vanilla Node-RED experience",
+        "description": "Features for FlowFuse to boost the vanilla Node-RED experience",
         "name": "scope:node-red",
         "aliases": [
             "Node-RED"
