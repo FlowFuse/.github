@@ -10,7 +10,7 @@ driver-docker
 driver-k8s
 driver-localfs
 file-server
-flowforge
+flowfuse
 flowforge-dev-env
 forge-ui-components
 handbook
