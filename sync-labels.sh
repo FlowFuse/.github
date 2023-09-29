@@ -1,5 +1,5 @@
 #!/bin/sh
-for repo in `cat ./flowforge-repositories.yml`
+for repo in `cat ./flowfuse-repositories.yml`
 do
-    github-label-sync -l ./labels.json flowforge/$repo -a $gh_token -A
+    github-label-sync -l ./labels.json flowfuse/$repo -a $gh_token -A
 done
