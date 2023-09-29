@@ -12,7 +12,7 @@ jobs:
     steps:
        - uses: actions/add-to-project@main
          with:
-           project-url: https://github.com/orgs/flowfuse/projects/3
+           project-url: https://github.com/orgs/FlowFuse/projects/3
            github-token: ${{ secrets.token }}
 
   add-to-artwork-board:
@@ -23,5 +23,5 @@ jobs:
          with:
            labeled: design, artwork
            label-operator: AND
-           project-url: https://github.com/orgs/flowfuse/projects/10
+           project-url: https://github.com/orgs/FlowFuse/projects/10
            github-token: ${{ secrets.token }}

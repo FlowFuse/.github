@@ -8,7 +8,7 @@ repositories in the FlowFuse organisation.
 ### Project Automation
 
 All code repositories must have the Project Automation workflow added. This is done
-by adding [`.github/workflows/project-automation.yml`](https://github.com/flowfuse/flowforge/blob/main/.github/workflows/project-automation.yml).
+by adding [`.github/workflows/project-automation.yml`](https://github.com/flowfuse/flowfuse/blob/main/.github/workflows/project-automation.yml).
 
 This workflow will ensure issues are automatically added to the [Product board](https://github.com/orgs/flowfuse/projects/3) where it can be triaged and prioritised.
 
