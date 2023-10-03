@@ -11,7 +11,7 @@ driver-k8s
 driver-localfs
 file-server
 flowfuse
-flowforge-dev-env
+dev-env
 forge-ui-components
 handbook
 helm
