@@ -3,12 +3,14 @@ admin
 aws-ami
 CloudProject
 content
+blueprint-library
 device-agent
 digital-ocean-droplet
 docker-compose
 driver-docker
 driver-k8s
 driver-localfs
+ff-catalogue
 file-server
 flowfuse
 dev-env
@@ -24,7 +26,6 @@ node-red-function-gpt
 nodered.snap
 nr-file-nodes
 nr-launcher
-nr-persistent-context
 nr-project-nodes
 nr-tools-plugin
 security
