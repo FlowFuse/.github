@@ -1,6 +1,7 @@
 .github
 admin
 aws-ami
+balena-device-agent
 CloudProject
 content
 blueprint-library
