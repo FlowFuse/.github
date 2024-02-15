@@ -27,6 +27,7 @@ node-red-function-gpt
 nodered.snap
 nr-file-nodes
 nr-launcher
+nr-pmon
 nr-project-nodes
 nr-tools-plugin
 security
