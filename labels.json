@@ -250,5 +250,10 @@
         "color": "B60205",
         "description": "requested by customer",
         "name": "customer request"
+    },
+    {
+        "color": "5B733C",
+        "description": "Issue for the In-Progress section of the website roadmap",
+        "name": "in-progress"
     }
 ]
