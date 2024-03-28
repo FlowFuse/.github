@@ -135,6 +135,10 @@ jobs:
           DATE=$(date +"%Y-%m-%d")
           echo "Date: $DATE"
           while read -r ISSUE_ITEM_ID; do
+            if [ -z "$ISSUE_ITEM_ID" ]; then
+                echo "No Issues to Update"
+                exit 0
+            fi
             echo "ISSUE_ITEM_ID=$ISSUE_ITEM_ID"
             updatedAt="$( gh api graphql -f query='
             mutation(
