@@ -5,96 +5,169 @@ on:
       - opened
       - reopened
       - synchronize
+      - converted_to_draft
       - ready_for_review
 jobs:
-    mark_under_review:
-      if: ${{ !github.event.pull_request.draft }}
-      name: "Update Issue: Under Review"
-      runs-on: ubuntu-latest
-      env:
-        GH_TOKEN: ${{ secrets.PROJECT_ACCESS_TOKEN }}
-      steps:
-        - name: Get Linked Issues
-          id: get_linked_issues
-          env:
-            PR_ID: ${{ github.event.pull_request.node_id }}
-          run: |
-            echo "PR_ID:"
-            echo "$PR_ID"
-            linked_issues="$( gh api graphql -f query='
-              query(
-                $pr: ID!
-              ) {
-                node(id: $pr) {
-                  ... on PullRequest {
-                    closingIssuesReferences(first:5, userLinkedOnly:false) {
-                      totalCount
-                      nodes { 
-                        id
-                        projectItems (first:5) {
-                          nodes {
+  mark_in_progress:
+    if: ${{ github.event.pull_request.draft }}
+    name: "Update Issue: In Progress"
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECT_ACCESS_TOKEN }}
+      PROJECT_ID: PVT_kwDOBNz_Ls0x7w
+      STATUS_FIELD_ID: PVTSSF_lADOBNz_Ls0x784AAWlq
+      IN_PROGRESS_OPTION_ID: 47fc9ee4
+    steps:
+      - name: Get Linked Issues
+        id: get_linked_issues
+        env:
+          PR_ID: ${{ github.event.pull_request.node_id }}
+        run: |
+          echo "PR_ID:"
+          echo "$PR_ID"
+          linked_issues="$( gh api graphql -f query='
+            query(
+              $pr: ID!
+            ) {
+              node(id: $pr) {
+                ... on PullRequest {
+                  closingIssuesReferences(first:5, userLinkedOnly:false) {
+                    totalCount
+                    nodes { 
+                      id
+                      projectItems (first:5) {
+                        nodes {
+                          id
+                          project {
                             id
-                            project {
-                              id
-                            }
                           }
                         }
                       }
                     }
                   }
                 }
-              }' -f pr=$PR_ID --jq '.data.node.closingIssuesReferences.nodes')"
-            echo "ISSUE IDs:"
-            echo "$linked_issues"
-            echo "LINKED_ISSUE_IDs=$linked_issues" >> $GITHUB_ENV
-        - name: Update Status to "Under Review"
-          env:
-            PROJECT_ID: PVT_kwHOBepif84AfH1x
-            STATUS_FIELD_ID: PVTSSF_lAHOBepif84AfH1xzgUjmnw
-            UNDER_REVIEW_OPTION_ID: 5fce39d2
-            INTO_REVIEW_FIELD_ID: PVTF_lAHOBepif84AfH1xzgUnkt0
-          run: |
-            item_ids=$(echo '${{ env.LINKED_ISSUE_IDs }}' | jq '.[] | .projectItems.nodes[] | select(.project.id == "${{ env.PROJECT_ID }}") | .id')
-            DATE=$(date +"%Y-%m-%d")
-            echo "Date: $DATE"
-            while read -r ISSUE_ITEM_ID; do
-              echo "ISSUE_ITEM_ID=$ISSUE_ITEM_ID"
-              updatedAt="$( gh api graphql -f query='
-              mutation(
-                $itemId: ID!,
-                $projectId: ID!,
-                $date: Date!
+              }
+            }' -f pr=$PR_ID --jq '.data.node.closingIssuesReferences.nodes')"
+          echo "ISSUE IDs:"
+          echo "$linked_issues"
+          echo "LINKED_ISSUE_IDs=$linked_issues" >> $GITHUB_ENV
+      - name: Update Status to "In Progress"
+        run: |
+          item_ids=$(echo '${{ env.LINKED_ISSUE_IDs }}' | jq '.[] | .projectItems.nodes[] | select(.project.id == "${{ env.PROJECT_ID }}") | .id')
+          DATE=$(date +"%Y-%m-%d")
+          echo "Date: $DATE"
+          while read -r ISSUE_ITEM_ID; do
+            echo "ISSUE_ITEM_ID=$ISSUE_ITEM_ID"
+            updatedAt="$( gh api graphql -f query='
+            mutation(
+              $itemId: ID!,
+              $projectId: ID!,
+            ) {
+              markUnderReview: updateProjectV2ItemFieldValue(
+                input: {
+                  projectId: $projectId,
+                  fieldId: "${{ env.STATUS_FIELD_ID }}",
+                  itemId: $itemId,
+                  value: {
+                    singleSelectOptionId: "${{ env.IN_PROGRESS_OPTION_ID }}"
+                  }
+                }
               ) {
-                markUnderReview: updateProjectV2ItemFieldValue(
-                  input: {
-                    projectId: $projectId,
-                    fieldId: "${{ env.STATUS_FIELD_ID }}",
-                    itemId: $itemId,
-                    value: {
-                      singleSelectOptionId: "${{ env.UNDER_REVIEW_OPTION_ID }}"
+                projectV2Item {
+                  type
+                  updatedAt
+                }
+              }
+            }' -f itemId=$ISSUE_ITEM_ID -f projectId=$PROJECT_ID -f date=$DATE  --jq '.data.updateProjectV2ItemFieldValue.projectV2Item.updatedAt')"
+            echo "Issues Updated @ $updatedAt"
+          done <<< "$item_ids"
+  mark_under_review:
+    if: ${{ !github.event.pull_request.draft }}
+    name: "Update Issue: Under Review"
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PROJECT_ACCESS_TOKEN }}
+      PROJECT_ID: PVT_kwDOBNz_Ls0x7w
+      STATUS_FIELD_ID: PVTSSF_lADOBNz_Ls0x784AAWlq
+      UNDER_REVIEW_OPTION_ID: 7d4d2d03
+      INTO_REVIEW_FIELD_ID: PVTF_lADOBNz_Ls0x784FKIwe
+    steps:
+      - name: Get Linked Issues
+        id: get_linked_issues
+        env:
+          PR_ID: ${{ github.event.pull_request.node_id }}
+        run: |
+          echo "PR_ID:"
+          echo "$PR_ID"
+          linked_issues="$( gh api graphql -f query='
+            query(
+              $pr: ID!
+            ) {
+              node(id: $pr) {
+                ... on PullRequest {
+                  closingIssuesReferences(first:5, userLinkedOnly:false) {
+                    totalCount
+                    nodes { 
+                      id
+                      projectItems (first:5) {
+                        nodes {
+                          id
+                          project {
+                            id
+                          }
+                        }
+                      }
                     }
                   }
-                ) {
-                  projectV2Item {
-                    type
-                    updatedAt
+                }
+              }
+            }' -f pr=$PR_ID --jq '.data.node.closingIssuesReferences.nodes')"
+          echo "ISSUE IDs:"
+          echo "$linked_issues"
+          echo "LINKED_ISSUE_IDs=$linked_issues" >> $GITHUB_ENV
+      - name: Update Status to "Under Review"
+        run: |
+          item_ids=$(echo '${{ env.LINKED_ISSUE_IDs }}' | jq '.[] | .projectItems.nodes[] | select(.project.id == "${{ env.PROJECT_ID }}") | .id')
+          DATE=$(date +"%Y-%m-%d")
+          echo "Date: $DATE"
+          while read -r ISSUE_ITEM_ID; do
+            echo "ISSUE_ITEM_ID=$ISSUE_ITEM_ID"
+            updatedAt="$( gh api graphql -f query='
+            mutation(
+              $itemId: ID!,
+              $projectId: ID!,
+              $date: Date!
+            ) {
+              markUnderReview: updateProjectV2ItemFieldValue(
+                input: {
+                  projectId: $projectId,
+                  fieldId: "${{ env.STATUS_FIELD_ID }}",
+                  itemId: $itemId,
+                  value: {
+                    singleSelectOptionId: "${{ env.UNDER_REVIEW_OPTION_ID }}"
                   }
                 }
-                markIntoReviewDate: updateProjectV2ItemFieldValue(
-                  input: {
-                    projectId: $projectId,
-                    fieldId: "${{ env.INTO_REVIEW_FIELD_ID }}",
-                    itemId: $itemId,
-                    value: {
-                      date: $date
-                    }
-                  }
-                ) {
-                  projectV2Item {
-                    type
-                    updatedAt
+              ) {
+                projectV2Item {
+                  type
+                  updatedAt
+                }
+              }
+              markIntoReviewDate: updateProjectV2ItemFieldValue(
+                input: {
+                  projectId: $projectId,
+                  fieldId: "${{ env.INTO_REVIEW_FIELD_ID }}",
+                  itemId: $itemId,
+                  value: {
+                    date: $date
                   }
                 }
-              }' -f itemId=$ISSUE_ITEM_ID -f projectId=$PROJECT_ID -f date=$DATE  --jq '.data.updateProjectV2ItemFieldValue.projectV2Item.updatedAt')"
-              echo "Issues Updated @ $updatedAt"
-            done <<< "$item_ids"
+              ) {
+                projectV2Item {
+                  type
+                  updatedAt
+                }
+              }
+            }' -f itemId=$ISSUE_ITEM_ID -f projectId=$PROJECT_ID -f date=$DATE  --jq '.data.updateProjectV2ItemFieldValue.projectV2Item.updatedAt')"
+            echo "Issues Updated @ $updatedAt"
+          done <<< "$item_ids"
