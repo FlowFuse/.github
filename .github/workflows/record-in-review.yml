@@ -1,5 +1,6 @@
 name: Update Issue Status
 on:
+  workflow_call:
   pull_request:
     types:
       - opened
