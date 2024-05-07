@@ -22,6 +22,5 @@
 
 ## Labels
 
- - [ ] Backport needed? -> add the `backport` label
  - [ ] Includes a DB migration? -> add the `area:migration` label
 
