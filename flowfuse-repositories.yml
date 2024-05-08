@@ -34,3 +34,4 @@ security
 usage-ping-collector
 website
 flow-renderer
+terraform-aws-flowfuse
