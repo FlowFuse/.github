@@ -252,6 +252,11 @@
         "name": "customer request"
     },
     {
+        "color": "B60205",
+        "description": "requested by a sales lead",
+        "name": "sales request"
+    },
+    {
         "color": "5B733C",
         "description": "Issue for the In-Progress section of the website roadmap",
         "name": "in-progress"
