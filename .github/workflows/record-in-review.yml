@@ -1,13 +1,10 @@
 name: Update Issue Status
 on:
   workflow_call:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - converted_to_draft
-      - ready_for_review
+    secrets:
+      PROJECT_ACCESS_TOKEN:
+        required: true
+
 jobs:
   mark_in_progress:
     if: ${{ github.event.pull_request.draft }}
