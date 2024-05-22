@@ -32,6 +32,12 @@ body:
         - Browser:
   validations:
     required: false
+- type: textarea
+  attributes:
+    label: Linked Customers
+    description: A bullet point list of the leads/customers that have been impacted by this problem
+    value: |
+      - Customer name and/or link to HubSpot contact
 - type: markdown
   attributes:
     value: |
