@@ -12,6 +12,12 @@ body:
   attributes:
     label: Description
     description: Describe the epic
+- type: textarea
+  attributes:
+    label: Requested By
+    description: A bullet point list of the leads/customers that have an interest in this Epic.
+    value: |
+      - Customer name and/or link to HubSpot contact
 - type: markdown
   attributes:
     value: |
