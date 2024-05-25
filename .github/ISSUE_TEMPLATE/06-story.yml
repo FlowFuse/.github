@@ -22,7 +22,7 @@ body:
       **I want to:**
 
       **So that:**
-
+      
 - type: textarea
   attributes:
     label: Acceptance Criteria
@@ -32,6 +32,14 @@ body:
       - [ ] criteria 1
       - [ ] criteria 2
       - [ ] criteria 3
+      - ...
+
+- type: textarea
+  attributes:
+    label: Requested By
+    description: A bullet point list of the leads/customers that have an interest in this Story.
+    value: |
+      - Customer name and/or link to HubSpot contact
       - ...
 
 - type: markdown
