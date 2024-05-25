@@ -6,6 +6,12 @@ body:
   attributes:
     label: Description
     description: Describe the feature
+- type: textarea
+  attributes:
+    label: Requested By
+    description: A bullet point list of the leads/customers that have requested this feature.
+    value: |
+      - Customer name and/or link to HubSpot contact
 - type: markdown
   attributes:
     value: |
