@@ -26,6 +26,7 @@ node-red-dashboard-2-migration
 node-red-dashboard-2-ui-example
 node-red-dashboard-2-ui-led
 node-red-dashboard-2-ui-iframe
+node-red-dashboard-2-ui-flowviewer
 node-red-function-gpt
 nodered.snap
 nr-file-nodes
