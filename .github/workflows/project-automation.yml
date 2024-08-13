@@ -30,7 +30,7 @@ jobs:
            github-token: ${{ secrets.token }}
   
   add-to-dashboard-backlog:
-    name: Add art requests to the Artwork board
+    name: Add issues to the Dashboard Backlog project board
     if: github.repository == 'FlowFuse/node-red-dashboard'
     runs-on: ubuntu-latest
     steps:
