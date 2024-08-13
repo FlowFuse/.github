@@ -26,3 +26,14 @@ jobs:
            label-operator: AND
            project-url: https://github.com/orgs/FlowFuse/projects/10
            github-token: ${{ secrets.token }}
+  
+  add-to-dashboard-backlog:
+    name: Add art requests to the Artwork board
+    if: github.repository == 'FlowFuse/node-red-dashboard'
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/add-to-project@main
+          with:
+            labeled: needs-triage
+            project-url: https://github.com/orgs/FlowFuse/projects/15
+            github-token: ${{ secrets.token }}
