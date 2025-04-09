@@ -40,3 +40,4 @@ website
 flow-renderer
 terraform-aws-flowfuse
 nr-assistant
+mqtt-schema-agent
