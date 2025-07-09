@@ -17,11 +17,14 @@ body:
     label: Description
     description: Describe the story
     value: |
-      **As a:**
+      **As a _____ I want to _____ so that _____**
 
-      **I want to:**
-
-      **So that:**
+- type: textarea
+  attributes:
+    label: Rationale
+    description: Provide reasoning and context
+    value: |
+      Provide further details about the rationale for this suggested improvement, including any research or analytics support.
       
 - type: textarea
   attributes:
