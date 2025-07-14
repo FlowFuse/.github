@@ -17,7 +17,11 @@ body:
     label: Description
     description: Describe the story
     value: |
-      **As a _____ I want to _____ so that _____**
+      **As a:**
+
+      **I want to:**
+
+      **So that:**
 
 - type: textarea
   attributes:
