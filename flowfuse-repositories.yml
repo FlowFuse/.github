@@ -34,6 +34,7 @@ nr-file-nodes
 nr-launcher
 nr-pmon
 nr-project-nodes
+nr-tables-nodes
 nr-tools-plugin
 security
 usage-ping-collector
