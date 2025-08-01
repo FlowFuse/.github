@@ -32,6 +32,7 @@ node-red-function-gpt
 nodered.snap
 nr-file-nodes
 nr-launcher
+nr-mcp-server-nodes
 nr-pmon
 nr-project-nodes
 nr-tables-nodes
