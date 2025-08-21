@@ -19,6 +19,7 @@
  - [ ] Changes `flowforge.yml`?
     - [ ] Issue/PR raised on `FlowFuse/helm` to update ConfigMap Template
     - [ ] Issue/PR raised on `FlowFuse/CloudProject` to update values for Staging/Production
+ - [ ] Link to Changelog Entry PR, or note why one is not needed.
 
 ## Labels
 
