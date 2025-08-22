@@ -36,6 +36,7 @@ nr-mcp-server-nodes
 nr-mqtt-nodes
 nr-pmon
 nr-project-nodes
+nr-subflow-export
 nr-tables-nodes
 nr-tools-plugin
 security
