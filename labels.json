@@ -55,6 +55,11 @@
     },
     {
         "color": "0075ca",
+        "description": "FlowFuse AI Assistant",
+        "name": "area:ff-expert"
+    },
+    {
+        "color": "0075ca",
         "description": "For any issues that require work in the frontend/UI",
         "name": "area:frontend",
         "aliases": [
@@ -154,6 +159,11 @@
         "color": "FBCA04",
         "description": "Needs looking at to decide what to do",
         "name": "needs-triage"
+    },
+    {
+        "color": "C5E02F",
+        "description": "For issues that promote growth, by improving onboarding, easing expanded usage, and reducing churn.",
+        "name": "growth"
     },
     {
         "color": "aaffaa",
