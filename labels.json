@@ -1,15 +1,5 @@
 [
     {
-        "color": "d73a4a",
-        "description": "Something isn't working",
-        "name": "bug"
-    },
-    {
-        "color": "a2eeef",
-        "description": "New feature or request that needs to be turned into Epic/Story details",
-        "name": "feature-request"
-    },
-    {
         "color": "5319E7",
         "description": "A significant feature or piece of work that doesn't easily fit into a single release",
         "name": "epic"
@@ -25,19 +15,133 @@
         "name": "task"
     },
     {
-        "color": "0075ca",
-        "description": "Database released work",
-        "name": "area:db"
+        "color": "d73a4a",
+        "description": "Something isn't working",
+        "name": "type:bug",
+        "aliases": [
+            "bug"
+        ]
+    },
+    {
+        "color": "a2eeef",
+        "description": "New feature or request that needs to be turned into Epic/Story details",
+        "name": "type:feature",
+        "aliases": [
+            "feature-request"
+        ]
+    },
+    {
+        "color": "a2eeef",
+        "description": "",
+        "name": "type:enhancement",
+        "aliases": [
+            "consideration"
+        ]
+    },
+    {
+        "color": "a2eeef",
+        "description": "",
+        "name": "type:tech-debt"
+    },
+    {
+        "color": "a2eeef",
+        "description": "",
+        "name": "type:docs"
+    },
+    {
+        "color": "a2eeef",
+        "description": "",
+        "name": "type:chore"
+    },
+    {
+        "color": "a2eeef",
+        "description": "",
+        "name": "type:security"
+    },
+    {
+        "color": "a2eeef",
+        "description": "",
+        "name": "type:spike"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:15m"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:30m"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:45m"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:1h"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:1h30m"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:2h"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:2h30m"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:3h"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:3h30m"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:4h"
+    },
+    {
+        "color": "d4cd59",
+        "description": "",
+        "name": "time:TBD"
     },
     {
         "color": "0075ca",
-        "description": "Involves a database migration",
-        "name": "area:migration"
+        "description": "AI related",
+        "name": "area:ai"
     },
     {
         "color": "0075ca",
         "description": "Work on the platform API",
         "name": "area:api"
+    },
+    {
+        "color": "0075ca",
+        "description": "Anything related to Stripe integration",
+        "name": "area:billing"
+    },
+    {
+        "color": "0075ca",
+        "description": "Anything related to customer success activities",
+        "name": "area:customer-success"
+    },
+    {
+        "color": "0075ca",
+        "description": "Database released work",
+        "name": "area:db"
     },
     {
         "color": "0075ca",
@@ -68,18 +172,13 @@
     },
     {
         "color": "0075ca",
-        "description": "Part of the install/first-run user experience",
-        "name": "area:install"
-    },
-    {
-        "color": "0075ca",
-        "description": "Anything related to Stripe integration",
-        "name": "area:billing"
-    },
-    {
-        "color": "0075ca",
         "description": "Anything related to the FF platform infrastructure",
         "name": "area:infrastructure"
+    },
+    {
+        "color": "0075ca",
+        "description": "Part of the install/first-run user experience",
+        "name": "area:install"
     },
     {
         "color": "0075ca",
@@ -88,92 +187,13 @@
     },
     {
         "color": "0075ca",
-        "description": "Anything related to customer success activities",
-        "name": "area:customer-success"
+        "description": "Involves a database migration",
+        "name": "area:migration"
     },
     {
-        "color": "DCEAFD",
-        "description": "Sizing estimation point",
-        "name": "size:XS - 1",
-        "aliases": [
-            "1",
-            "XS - 1"
-        ]
-    },
-    {
-        "color": "C8DFFD",
-        "description": "Sizing estimation point",
-        "name": "size:S - 2",
-        "aliases": [
-            "2",
-            "S - 2"
-        ]
-    },
-    {
-        "color": "B4D4FE",
-        "description": "Sizing estimation point",
-        "name": "size:M - 3",
-        "aliases": [
-            "3",
-            "M - 3"
-        ]
-    },
-    {
-        "color": "A0C9FE",
-        "description": "Sizing estimation point",
-        "name": "size:L - 5",
-        "aliases": [
-            "5",
-            "L - 5"
-        ]
-    },
-    {
-        "color": "8CBEFF",
-        "description": "Sizing estimation point",
-        "name": "size:XL - 8",
-        "aliases": [
-            "8",
-            "XL - 8"
-        ]
-    },
-    {
-        "color": "78B3FF",
-        "description": "Sizing estimation point",
-        "name": "size:XXL - 13",
-        "aliases": [
-            "13",
-            "XXL - 13"
-        ]
-    },
-    {
-        "color": "ffffff",
-        "description": "",
-        "name": "upstream"
-    },
-    {
-        "color": "D93F0B",
-        "description": "",
-        "name": "blocked"
-    },
-    {
-        "color": "FBCA04",
-        "description": "Needs looking at to decide what to do",
-        "name": "needs-triage"
-    },
-    {
-        "color": "C5E02F",
-        "description": "For issues that promote growth, by improving onboarding, easing expanded usage, and reducing churn.",
-        "name": "growth"
-    },
-    {
-        "color": "aaffaa",
-        "description": "Good for newcomers",
-        "name": "good first issue"
-    },
-    {
-        "color": "666666",
-        "description": "Something to highlight in the release",
-        "name": "headline"
+        "color": "0075ca",
+        "description": "Node-RED related",
+        "name": "area:node-red"
     },
     {
         "color": "f3f3f3",
@@ -208,6 +228,54 @@
         ]
     },
     {
+        "color": "f3f3f3",
+        "description": "Pro-tier adoption and roll out features",
+        "name": "scope:pro"
+    },
+    {
+        "color": "FBCA04",
+        "description": "Needs looking at to decide what to do",
+        "name": "needs-triage"
+    },
+    {
+        "color": "FBCA04",
+        "description": "Needs further refinement",
+        "name": "needs-refinement",
+        "aliases": [
+            "research"
+        ]
+    },
+    {
+        "color": "FBCA04",
+        "description": "Needs sizing estimates",
+        "name": "needs-estimate"
+    },
+    {
+        "color": "D93F0B",
+        "description": "",
+        "name": "blocked"
+    },
+    {
+        "color": "eeeeee",
+        "description": "",
+        "name": "dep:internal"
+    },
+    {
+        "color": "eeeeee",
+        "description": "",
+        "name": "dep:oss"
+    },
+    {
+        "color": "eeeeee",
+        "description": "",
+        "name": "dep:vendor"
+    },
+    {
+        "color": "CF0B1C",
+        "description": "Critical Priority",
+        "name": "priority:critical"
+    },
+    {
         "color": "B60205",
         "description": "High Priority",
         "name": "priority:high",
@@ -232,34 +300,19 @@
         ]
     },
     {
-        "color": "CF0B1C",
-        "description": "Critical Priority",
-        "name": "priority:critical"
+        "color": "666666",
+        "description": "Something to highlight in the release",
+        "name": "headline"
     },
     {
-        "color": "D24787",
-        "description": "Requires Graphic/UI/UX Design work",
-        "name": "design"
+        "color": "39672f",
+        "description": "",
+        "name": "release:2.27"
     },
     {
-        "color": "D24787",
-        "description": "Requires the production of an art asset, e.g. blog tile, diagram, icon",
-        "name": "artwork"
-    },
-    {
-        "color": "006b75",
-        "description": "A potential feature or improvement that is under review for possible development and implementation",
-        "name": "consideration"
-    },
-    {
-        "color": "A78D52",
-        "description": "further investigation, analysis, or study is needed to address a specific issue",
-        "name": "research"
-    },
-    {
-        "color": "B60205",
-        "description": "requested by customer",
-        "name": "customer request"
+        "color": "39672f",
+        "description": "",
+        "name": "release:2.28"
     },
     {
         "color": "B60205",
@@ -267,8 +320,98 @@
         "name": "sales request"
     },
     {
+        "color": "B60205",
+        "description": "requested by customer",
+        "name": "customer request"
+    },
+    {
+        "color": "D24787",
+        "description": "Requires the production of an art asset, e.g. blog tile, diagram, icon",
+        "name": "artwork"
+    },
+    {
+        "color": "D24787",
+        "description": "Requires Graphic/UI/UX Design work",
+        "name": "design"
+    },
+    {
         "color": "5B733C",
         "description": "Issue for the In-Progress section of the website roadmap",
         "name": "in-progress"
+    },
+    {
+        "color": "C5E02F",
+        "description": "For issues that promote growth, by improving onboarding, easing expanded usage, and reducing churn.",
+        "name": "growth"
+    },
+    {
+        "color": "aaffaa",
+        "description": "Good for newcomers",
+        "name": "good first issue"
+    },
+    {
+        "color": "ffffff",
+        "description": "",
+        "name": "upstream"
+    },
+    {
+        "color": "C8DFFD",
+        "description": "High-level sizing",
+        "name": "size:L",
+        "aliases": [
+            "5",
+            "L - 5",
+            "size:L - 5"
+        ]
+    },
+    {
+        "color": "C8DFFD",
+        "description": "High-level sizing",
+        "name": "size:M",
+        "aliases": [
+            "3",
+            "M - 3",
+            "size:M - 3"
+        ]
+    },
+    {
+        "color": "C8DFFD",
+        "description": "High-level sizing",
+        "name": "size:S",
+        "aliases": [
+            "2",
+            "S - 2",
+            "size:S - 2"
+        ]
+    },
+    {
+        "color": "C8DFFD",
+        "description": "High-level sizing",
+        "name": "size:XL",
+        "aliases": [
+            "8",
+            "XL - 8",
+            "size:XL - 8"
+        ]
+    },
+    {
+        "color": "C8DFFD",
+        "description": "High-level sizing",
+        "name": "size:XS",
+        "aliases": [
+            "1",
+            "XS - 1",
+            "size:XS - 1"
+        ]
+    },
+    {
+        "color": "C8DFFD",
+        "description": "High-level sizing",
+        "name": "size:XXL",
+        "aliases": [
+            "13",
+            "XXL - 13",
+            "size:XXL - 13"
+        ]
     }
 ]
