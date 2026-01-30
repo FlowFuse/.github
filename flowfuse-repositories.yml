@@ -4,6 +4,7 @@ aws-ami
 balena-device-agent
 CloudProject
 content
+customer
 blueprint-library
 device-agent
 digital-ocean-droplet
@@ -40,6 +41,7 @@ nr-project-nodes
 nr-subflow-export
 nr-tables-nodes
 nr-tools-plugin
+product
 security
 usage-ping-collector
 website
