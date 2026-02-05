@@ -146,7 +146,7 @@
     {
         "color": "0075ca",
         "description": "Work related to remote instances",
-        "name": "area:remote-instance"
+        "name": "area:remote-instance",
         "aliases": [
             "area:device"
         ]
