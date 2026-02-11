@@ -145,6 +145,11 @@
     },
     {
         "color": "0075ca",
+        "description": "Related to work on the immersive editor",
+        "name": "area:immersive-editor"
+    },
+    {
+        "color": "0075ca",
         "description": "Work related to remote instances",
         "name": "area:remote-instance",
         "aliases": [
