@@ -163,6 +163,11 @@
     },
     {
         "color": "0075ca",
+        "description": "Work related to certified nodes",
+        "name": "area:certified-nodes"
+    },
+    {
+        "color": "0075ca",
         "description": "Improvements or additions to documentation",
         "name": "area:docs",
         "aliases": [
