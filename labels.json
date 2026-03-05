@@ -289,12 +289,12 @@
         "name": "dep:vendor"
     },
     {
-        "color": "CF0B1C",
+        "color": "B60205",
         "description": "Critical Priority",
         "name": "priority:critical"
     },
     {
-        "color": "B60205",
+        "color": "D93F0B",
         "description": "High Priority",
         "name": "priority:high",
         "aliases": [
@@ -302,7 +302,7 @@
         ]
     },
     {
-        "color": "E99695",
+        "color": "E4A000",
         "description": "Medium Priority",
         "name": "priority:medium",
         "aliases": [
@@ -310,7 +310,7 @@
         ]
     },
     {
-        "color": "F9D0C4",
+        "color": "0E8A16",
         "description": "Low Priority",
         "name": "priority:low",
         "aliases": [
