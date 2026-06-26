@@ -41,6 +41,7 @@ nr-project-nodes
 nr-subflow-export
 nr-tables-nodes
 nr-tools-plugin
+nr-remote-agent
 product
 security
 usage-ping-collector
